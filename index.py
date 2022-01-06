@@ -76,7 +76,7 @@ def main_handler(event, context):
     print('变更的状态个数为：' + str(len(contents)))
     for content in contents:
         print(content)
-        r = requests.post('https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=81ef7bfa-0ff4-4850-86df-a8e272c8cafe',
+        r = requests.post('',
                           data=content.encode('utf-8'))
         print(r.status_code)
         print(r.content)
